@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f8eee9" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <title>Open when you miss me ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style id="accessGateBoot">body { visibility: hidden !important; }</style>
+</head>
+<body>
+  <section class="access-gate" id="accessGate" aria-labelledby="accessTitle">
+    <div class="access-gate-card">
+      <p class="access-kicker">a little secret for you</p>
+      <h1 id="accessTitle">This one is just for you.</h1>
+      <form class="access-form" id="accessForm" novalidate>
+        <div class="code-inputs" id="codeInputs" aria-label="Enter the 4-digit access code">
+          <input class="code-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="First digit" autocomplete="one-time-code" />
+          <input class="code-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Second digit" />
+          <input class="code-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Third digit" />
+          <input class="code-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Fourth digit" />
+        </div>
+        <p class="access-feedback" id="accessFeedback" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grain"></div>
+  <div id="particles" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <section class="hero" id="hero">
+    <p class="eyebrow">HAPPY 1ST YEAR ANNIVERSARY LOVE</p>
+      <h1>Open when<br><em>you miss me</em></h1>
+      <p class="subcopy">For the moments when I can't be right there beside you.</p>
+
+      <button class="envelope-button" id="openEnvelope" aria-label="Open the letter">
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-back"></span>
+          <span class="paper-peek">For my beautifull Lara ♡</span>
+          <span class="envelope-left"></span>
+          <span class="envelope-right"></span>
+          <span class="envelope-bottom"></span>
+          <span class="envelope-flap"></span>
+          <span class="wax-seal">Y</span>
+        </span>
+        <span class="tap-label">Tap to open</span>
+      </button>
+
+      <div class="tiny-note">No cheating — only open this when you really miss me.</div>
+    </section>
+
+    <section class="letter-section" id="letterSection" aria-hidden="true">
+      <div class="letter-card">
+        <div class="letter-topline">
+          <span id="toLine">to my favorite person,</span>
+          <span class="date-dot">♡</span>
+        </div>
+
+        <h2>One whole year with you.</h2>
+
+        <div id="letterBody" class="letter-body"></div>
+
+        <div class="photo-frame" id="photoFrame">
+          <img id="memoryPhoto" alt="A memory of us" />
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <span>♡</span>
+            <small>Add your favorite photo of us</small>
+          </div>
+          <p class="photo-caption" id="photoCaption">one of my favorite little pieces of us</p>
+        </div>
+
+        <div class="reveal-wrap">
+          <button class="reveal-button" id="revealButton">Tap if you still miss me</button>
+          <div class="secret-message" id="secretMessage" aria-hidden="true">
+            <span class="secret-heart">♡</span>
+            <p id="secretText"></p>
+          </div>
+        </div>
+
+        <div class="signature">
+          <span>always yours,</span>
+          <strong id="signatureName">Yasir ♡</strong>
+        </div>
+      </div>
+
+      <div class="music-card" id="musicCard">
+        <div class="music-art">♫</div>
+        <div class="music-copy">
+          <span class="music-kicker">OUR SONG</span>
+          <strong id="songTitle">Tap to play</strong>
+        </div>
+        <span class="sound-waves" id="soundWaves" aria-label="Song is paused" role="img">
+          <i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <button class="play-button" id="playButton" aria-label="Play our song">
+          <span id="playIcon">▶</span>
+        </button>
+        <audio id="audio" preload="metadata"></audio>
+      </div>
+
+      <button class="back-top" id="backTop">Back to the envelope ↑</button>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Rename your favorite photo to: us.jpg
+Optional song file: our-song.mp3
+
+Both files should be placed directly in this assets folder.
